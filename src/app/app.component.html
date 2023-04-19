@@ -1,0 +1,21 @@
+<div class="contenedor">
+<h1>Brayan Adair Montaño Zamora</h1>
+  <mat-form-field>
+    <input matInput [(ngModel)]="valor1" type="number"  placeholder="Ingrese primer número">
+  </mat-form-field>
+
+  <mat-form-field>
+    <input  matInput [(ngModel)]="valor2" type="number" placeholder="Ingrese segundo número">
+  </mat-form-field>
+
+  <mat-slide-toggle [(ngModel)]="opcion1">Sumar</mat-slide-toggle>
+  <mat-slide-toggle [(ngModel)]="opcion2">Restar</mat-slide-toggle>
+  <mat-slide-toggle [(ngModel)]="opcion3">Multiplicar</mat-slide-toggle>
+  <mat-slide-toggle [(ngModel)]="opcion4">Dividir</mat-slide-toggle>
+
+  <button mat-raised-button color="primary" (click)="operar()" style="background-color: brown; color: aliceblue;">Calcular</button>
+
+  <p>
+    {{resultado}}
+  </p>
+</div>
